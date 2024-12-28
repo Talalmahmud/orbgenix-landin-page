@@ -27,10 +27,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className=" w-[912px] mx-auto  text-white my-16 p-4 ">
+    <div className=" w-full xl:w-[912px] mx-auto  text-white my-16 p-4 ">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-sm font-semibold uppercase mb-4">FAQ</h2>
-        <h1 className="text-[48px] font-bold mb-8">
+        <h1 className=" text-[22px] xl:text-[48px] font-bold mb-8">
           Find answers about our services, processes, pricing, and more
         </h1>
       </div>
@@ -44,13 +44,17 @@ const FAQ = () => {
             onClick={() => toggleFAQ(index)}
           >
             <div className="flex justify-between items-center">
-              <h3 className=" text-[23px] font-semibold">{faq.question}</h3>
+              <h3 className=" text-[14px] xl:text-[23px] font-semibold">
+                {faq.question}
+              </h3>
               <span className="text-2xl">
                 {activeIndex === index ? "−" : "+"}
               </span>
             </div>
             {activeIndex === index && (
-              <p className="mt-4 text-[16px] text-gray-200">{faq.answer}</p>
+              <p className="mt-4 text-[12px] xl:text-[16px] text-gray-200">
+                {faq.answer}
+              </p>
             )}
           </div>
         ))}

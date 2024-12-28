@@ -26,9 +26,9 @@ const navList = [
 ];
 const NavBar = () => {
   return (
-    <div className="p-4 shadow-md z-40 fixed top-[20px] left-1/2 transform -translate-x-1/2 bg-white w-[1100px] rounded-[40px] h-[80px] flex justify-between items-center">
+    <div className="p-4 shadow-md z-40 fixed top-0 xl:top-[20px] left-1/2 transform -translate-x-1/2 bg-white w-full xl:w-[1100px] rounded-[0px] xl:rounded-[40px] h-[80px] flex justify-between items-center">
       <h2 className=" text-brand text-[36px] font-semibold">OrbGenix</h2>
-      <div className=" flex items-center gap-[21px] text-[16px] font-normal">
+      <div className=" hidden xl:flex items-center gap-[21px] text-[16px] font-normal">
         {navList?.map((item) => (
           <Link
             href={item?.url}

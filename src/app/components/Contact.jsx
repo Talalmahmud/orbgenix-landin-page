@@ -16,8 +16,8 @@ const Contact = () => {
   };
   return (
     <div className="w-full bg-gradient-to-br from-[#7A56D1] to-[#663CC6] shadow-lg  ">
-      <div className=" mx-auto w-[1100px]  flex flex-col gap-4 py-8">
-        <h2 className="text-white text-[48px] text-clip text-center font-semibold">
+      <div className=" mx-auto w-full xl:w-[1100px]  flex flex-col gap-4 py-8">
+        <h2 className="text-white text-[32px] xl:text-[48px] text-clip text-center font-semibold">
           Let’s Talk To Our Team
         </h2>
         <div className=" w-full  rounded-[16px]  gap-6 bg-white py-4">

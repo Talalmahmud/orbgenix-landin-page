@@ -3,11 +3,11 @@ import React from "react";
 
 const ProjectSection = () => {
   return (
-    <div className=" w-[1100px] mx-auto py-10 text-white">
-      <p className=" text-[48px] text-white">
+    <div className=" w-full x:w-[1100px] mx-auto py-10 text-white">
+      <p className=" text-[32px] xl:text-[48px] text-white">
         Our Satisfied <br /> Clients Project
       </p>
-      <div className=" grid grid-cols-2 gap-[24px] items-center">
+      <div className=" grid grid-cols-1 xl:grid-cols-2 gap-[24px] items-center">
         <Image
           src="/window.svg"
           height={200}
@@ -33,7 +33,7 @@ const ProjectSection = () => {
           </p>
         </div>
       </div>
-      <div className=" grid grid-cols-2 gap-[24px] items-center">
+      <div className=" grid grid-cols-1 xl:grid-cols-2 gap-[24px] items-center">
         <div className=" flex flex-col gap-2">
           <div>
             {" "}
