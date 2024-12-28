@@ -3,7 +3,7 @@ import React from "react";
 
 const ProjectSection = () => {
   return (
-    <div className=" w-full x:w-[1100px] mx-auto py-10 text-white">
+    <div className=" w-full xl:w-[1100px] mx-auto py-10 text-white">
       <p className=" text-[32px] xl:text-[48px] text-white">
         Our Satisfied <br /> Clients Project
       </p>
