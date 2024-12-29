@@ -38,7 +38,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium">Full Name</label>
                 <input
                   type="text"
-                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500"
+                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500 text-black font-normal roundend-[8px]"
                   placeholder="Full Name"
                   required
                 />
@@ -49,7 +49,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
-                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500"
+                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500 text-black font-normal roundend-[8px]"
                   placeholder="Email Address"
                   required
                 />
@@ -60,7 +60,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="tel"
-                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500"
+                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500 text-black font-normal roundend-[8px]"
                   placeholder="Phone Number"
                   required
                 />
@@ -69,7 +69,7 @@ const Contact = () => {
                 <label className="block text-sm font-medium">Country</label>
                 <input
                   type="text"
-                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500"
+                  className="w-full mt-1 px-3 py-2 border-b-[1px] outline-none focus:ring-purple-500 focus:border-purple-500 text-black font-normal roundend-[8px]"
                   placeholder="Country"
                   required
                 />

@@ -11,13 +11,13 @@ import dayjs from "dayjs";
 
 const CustomTimeClock = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 p-4">
+    <div className="flex flex-col md:flex-row justify-between gap-6 p-4">
       {/* Time Clock */}
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <div className="flex-1 h-auto md:h-[300px]  ">
+        <div className=" h-auto md:h-[300px]  ">
           <StaticTimePicker
+            defaultValue={dayjs()}
             onChange={(e) => console.log(e)}
-            orientation="landscape"
             slotProps={{
               // The actions will be the same between desktop and mobile
               actionBar: {
@@ -34,7 +34,7 @@ const CustomTimeClock = () => {
 
       {/* Date Calendar */}
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <div className="flex-1  ">
+        <div className=" ">
           <StaticDatePicker
             slotProps={{
               // The actions will be the same between desktop and mobile
@@ -42,8 +42,11 @@ const CustomTimeClock = () => {
                 actions: ["clear"],
               },
               // The actions will be different between desktop and mobile
+              actionBar: ({ wrapperVariant }) => ({
+                actions: wrapperVariant === "desktop" ? [] : ["clear"],
+              }),
             }}
-            orientation="landscape"
+            defaultValue={dayjs("2022-04-17")}
           />
         </div>
       </LocalizationProvider>
